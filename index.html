@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/styles.css">
+
+  <script defer src="./main.js"></script>
+  <title>Frontend Mentor | Single-page design portfolio</title>
+</head>
+
+<body>
+
+  <header class="container">
+    <nav class="flex">
+      <a href="#"><img src="./assets/logo.svg" alt=""></a>
+      <button class="btn btn--secondary fs-btn">Free Consultation</button>
+    </nav>
+  </header>
+
+  <main>
+
+    <div class="hero">
+      <h1 class="fs-heading-xl">Design solutions made easy</h1>
+      <p>With over ten years of experience in various design disciplines, I’m your one-stop shop for your design needs.
+      </p>
+    </div>
+
+    <ul class="grid container">
+      <li class="grid__item graphic-design">
+        <img src="./assets/pattern-graphic-design.svg" alt="">
+        <h2 class="fs-heading-s">Graphic Design</h2>
+      </li>
+      <li class="grid__item ui-ux">
+        <img src="./assets/pattern-ui-ux.svg" alt="">
+        <h2 class="fs-heading-s">UI/UX</h2>
+      </li>
+      <li class="grid__item apps">
+        <img src="./assets/pattern-apps.svg" alt="">
+        <h2 class="fs-heading-s">Apps</h2>
+      </li>
+      <li class="grid__item photography">
+        <img src="./assets/pattern-photography.svg" alt="">
+        <h2 class="fs-heading-s">Photography</h2>
+      </li>
+      <li class="grid__item illustrations">
+        <img src="./assets/pattern-illustrations.svg" alt="">
+        <h2 class="fs-heading-s">Illustrations</h2>
+      </li>
+      <li class="grid__item motion-graphics">
+        <img src="./assets/pattern-motion-graphics.svg" alt="">
+        <h2 class="fs-heading-s">Motion Graphics</h2>
+      </li>
+    </ul>
+
+    <div class="profile">
+      <img src="./assets/image-amy.webp" alt="amy">
+      <div class="profile__content">
+        <h2 class="fs-heading-l">I’m Amy, and I’d love to work on your next project</h2>
+        <p>
+          I love working with others to create beautiful design solutions. I’ve designed everything from brand
+          illustrations
+          to complete mobile apps. I’m also handy with a camera!
+        </p>
+        <button class="btn fs-btn btn--primary">Free Consultation</button>
+      </div>
+    </div>
+
+    <div class="work">
+      <h3 class="fs-heading-m">My Work</h3>
+      <div class="work__slides--container">
+        <ul class="work__slides--wrapper">
+          <li class="work__slide is-selected">
+            <img src="./assets/image-slide-1.jpg " alt="">
+          </li>
+          <li class="work__slide">
+            <img src="./assets/image-slide-2.jpg" alt="">
+          </li>
+          <li class="work__slide">
+            <img src="./assets/image-slide-3.jpg" alt="">
+          </li>
+          <li class="work__slide">
+            <img src="./assets/image-slide-4.jpg" alt="">
+          </li>
+          <li class="work__slide">
+            <img src="./assets/image-slide-5.jpg" alt="">
+          </li>
+        </ul>
+      </div>
+      <div class="work__btn--wrapper">
+        <button class="work__btn work__btn--previous" disabled><svg width="15" height="16" xmlns="http://www.w3.org/2000/svg">
+            <path fill="#FFF" d="M8 0 0 8l8 8 1.687-1.687-5.121-5.12h10.241V6.807H4.566l5.121-5.12z" />
+          </svg></button>
+        <button class="work__btn work__btn--next"><svg width="15" height="16" xmlns="http://www.w3.org/2000/svg">
+            <path fill="#FFF" d="m6.808 16 8-8-8-8-1.687 1.687 5.121 5.12H.001v2.386h10.241l-5.121 5.12z" />
+          </svg></button>
+      </div>
+    </div>
+
+    <div class="book container">
+      <h2 class="fs-heading-l">Book a call with me</h2>
+      <p>
+        I’d love to have a chat to see how I can help you. The best first step is for us to discuss your project during
+        a
+        free consultation. Then we can move forward from there.
+      </p>
+      <button class="btn btn--primary fs-btn">Free Consultation</button>
+    </div>
+  </main>
+
+
+  <footer class="flex container">
+    <img src="./assets/logo.svg" alt="">
+    <button class="btn fs-btn btn--secondary">Free Consultation</button>
+  </footer>
+
+</body>
+
+</html>
