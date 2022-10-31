@@ -10,12 +10,12 @@ workSlides.forEach((workSlide, index) => {
 });
 
 nextButton.addEventListener("click", (_) => {
-  const currentSlide = worksSlidesWrapper.querySelector(".is-selected");
+  const currentSlide = worksSlidesWrapper.querySelector(".active");
   const nextSlide = currentSlide.nextElementSibling;
   const destination = getComputedStyle(nextSlide).left;
   worksSlidesWrapper.style.transform = `translateX(-${destination})`;
-  currentSlide.classList.remove("is-selected");
-  nextSlide.classList.add("is-selected");
+  currentSlide.classList.remove("active");
+  nextSlide.classList.add("active");
   
   previousButton.removeAttribute("disabled");
   if (!nextSlide.nextElementSibling) {
@@ -24,12 +24,12 @@ nextButton.addEventListener("click", (_) => {
 });
 
 previousButton.addEventListener("click", (_) => {
-  const currentSlide = worksSlidesWrapper.querySelector(".is-selected");
+  const currentSlide = worksSlidesWrapper.querySelector(".active");
   const previousSlide = currentSlide.previousElementSibling;
   const destination = getComputedStyle(previousSlide).left;
   worksSlidesWrapper.style.transform = `translateX(-${destination})`;
-  currentSlide.classList.remove("is-selected");
-  previousSlide.classList.add("is-selected");
+  currentSlide.classList.remove("active");
+  previousSlide.classList.add("active");
   
   nextButton.removeAttribute("disabled");
   if (!previousSlide.previousElementSibling) {

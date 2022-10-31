@@ -305,7 +305,7 @@ nav {
 }
 
 .profile__content {
-    max-width: 540px;
+    max-width: 33.75rem;
     margin: 0 auto;
 }
 
@@ -340,15 +340,14 @@ nav {
     display: flex;
     flex-direction: row;
     position: relative;
+    transform: translateX(-540px);
     transition: transform 0.3s ease-out;
-    /* left: -33.4rem; */
-
 }
 
 .work__slide {
 
-    width: 270px;
-    height: 180px;
+    width: 16.875rem;
+    height: 11.25rem;
     margin: 0 0.4063rem 0 0.5313rem;
     transform: translateX(10px);
 }
@@ -459,7 +458,7 @@ footer {
     .grid {
         grid-template-columns: minmax(min-content, 20.8125rem) minmax(min-content, 9.6875rem) minmax(min-content, 9.6875rem);
         grid-template-rows: minmax(min-content, 11.375rem) minmax(min-content, 9.875rem) minmax(min-content, 11.375rem);
-        grid-template-areas: 'graphic ui-ux apps''graphic illustrations illustrations''photography motion motion';
+        grid-template-areas: 'graphic ui-ux apps' 'graphic illustrations illustrations' 'photography motion motion';
         gap: 1.5rem;
         padding: 4rem 0 7.5rem;
 
@@ -518,6 +517,7 @@ footer {
 
     .work__slides--wrapper {
         margin: 3.5rem auto 3.5rem;
+        transform: translateX(-1068px);
         /* left: -64rem; */
     }
 
@@ -613,7 +613,7 @@ footer {
     .grid {
         grid-template-columns: minmax(min-content, 22.125rem) repeat(2, minmax(min-content, 10.25rem)) minmax(min-content, 22.125rem);
         grid-template-rows: minmax(min-content, 11.375rem) minmax(min-content, 9.875rem);
-        grid-template-areas: 'graphic ui-ux apps photography''graphic illustrations illustrations motion';
+        grid-template-areas: 'graphic ui-ux apps photography' 'graphic illustrations illustrations motion';
         align-items: stretch;
         gap: 1.5rem;
         padding: 5rem 0 8.5rem;
@@ -661,7 +661,7 @@ footer {
         display: grid;
         grid-template-columns: minmax(min-content, 33.75rem) minmax(min-content, 18rem);
         grid-template-rows: minmax(min-content, 3.125rem) minmax(min-content, 5.25rem);
-        grid-template-areas: 'title btn''body btn';
+        grid-template-areas: 'title btn' 'body btn';
         justify-content: space-between;
         align-items: center;
         text-align: left;
