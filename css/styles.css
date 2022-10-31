@@ -9,7 +9,7 @@
     --clr-palette-primary-300: hsl(7deg 77% 66%);
     --clr-palette-primary-200: hsl(28deg 89% 67%);
     --clr-palette-primary-100: hsl(0deg 78% 79%);
-
+    --clr-palette-primary-50: hsla(30, 100%, 97%, 1);
     /* ## neutral ##  */
     --clr-palette-neutral-900: hsl(0deg 0% 1%);
     --clr-palette-neutral-600: hsl(30deg 5% 45%);
@@ -74,7 +74,7 @@ html {
 
 
 body {
-
+    background-color: var(--clr-palette-neutral-50);
     color: var(--clr-palette-neutral-600);
     font-size: var(--fs-body);
     font-weight: var(--fw-500);
