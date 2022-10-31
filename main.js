@@ -9,6 +9,12 @@ workSlides.forEach((workSlide, index) => {
   workSlide.style.left = slideWidth * index + "px";
 });
 
+window.addEventListener('load', (event) => {
+  previousButton.removeAttribute("disabled")
+nextButton.removeAttribute("disabled");
+});
+
+
 nextButton.addEventListener("click", (_) => {
   const currentSlide = worksSlidesWrapper.querySelector(".active");
   const nextSlide = currentSlide.nextElementSibling;
@@ -36,3 +42,5 @@ previousButton.addEventListener("click", (_) => {
     previousButton.setAttribute("disabled", true);
   }
 });
+
+
