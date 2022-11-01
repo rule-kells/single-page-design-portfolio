@@ -578,11 +578,13 @@ footer {
 
     .btn--primary:hover,
     .btn--primary:active {
+        cursor:pointer;
         background-color: var(--clr-palette-primary-200);
     }
 
     .btn--secondary:hover,
     .btn--secondary:active {
+        cursor:pointer;
         background-color: var(--clr-palette-primary-400);
     }
 
@@ -692,6 +694,6 @@ footer {
     .btn {
         max-width: 14.25rem;
         padding: 0.875rem 2.8125rem;
-    }
+    }  
 
 }
